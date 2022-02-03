@@ -1189,7 +1189,7 @@ final class IndexingChain implements Accountable {
 
           int startOffset = invertState.offset + invertState.offsetAttribute.startOffset();
           int endOffset = invertState.offset + invertState.offsetAttribute.endOffset();
-          if (startOffset < invertState.lastStartOffset || endOffset < startOffset) {
+          if (endOffset < startOffset) {
             throw new IllegalArgumentException(
                 "startOffset must be non-negative, and endOffset must be >= startOffset, and offsets must not go backwards "
                     + "startOffset="

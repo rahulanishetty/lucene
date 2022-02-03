@@ -22,6 +22,7 @@ module org.apache.lucene.core {
   requires static jdk.unsupported; // this is optional but without it MMapDirectory won't be enabled
   requires static jdk.management; // this is optional but explicit declaration is recommended
 
+  opens org.apache.lucene.analysis;
   exports org.apache.lucene.analysis;
   exports org.apache.lucene.analysis.standard;
   exports org.apache.lucene.analysis.tokenattributes;
