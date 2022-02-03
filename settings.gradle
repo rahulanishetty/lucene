@@ -27,6 +27,7 @@ rootProject.name = "lucene-root"
 includeBuild("dev-tools/missing-doclet")
 
 include "lucene:analysis:common"
+include "lucene:analysis:dynamic"
 include "lucene:analysis:icu"
 include "lucene:analysis:kuromoji"
 include "lucene:analysis:morfologik"
